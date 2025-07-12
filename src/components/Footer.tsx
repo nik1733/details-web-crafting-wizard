@@ -1,5 +1,5 @@
 
-import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { TestTube, Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,12 +10,12 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Heart className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-primary">MediLine</span>
+              <TestTube className="h-8 w-8 text-primary" />
+              <span className="text-2xl font-bold text-primary">Rapid Test Hub</span>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Revolutionizing healthcare management with innovative technology solutions. 
-              Streamlining medical processes for better patient care and operational efficiency.
+              Revolutionizing healthcare testing with fast, accurate, and reliable diagnostic solutions. 
+              Streamlining testing processes for better patient outcomes and operational efficiency.
             </p>
           </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@mediline.com</span>
+                <span>info@rapidtesthub.com</span>
               </li>
               <li className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 MediLine. All rights reserved. Built for better healthcare.</p>
+          <p>&copy; 2024 Rapid Test Hub. All rights reserved. Built for better healthcare testing.</p>
         </div>
       </div>
     </footer>

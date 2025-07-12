@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Heart } from 'lucide-react';
+import { Menu, X, TestTube } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -25,8 +25,8 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Heart className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-primary">MediLine</span>
+              <TestTube className="h-8 w-8 text-primary" />
+              <span className="text-2xl font-bold text-primary">Rapid Test Hub</span>
             </Link>
           </div>
 

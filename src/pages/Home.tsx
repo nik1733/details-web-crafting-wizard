@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Shield, Users, Zap, Heart, Activity, FileText } from 'lucide-react';
+import { ArrowRight, Shield, Users, Zap, TestTube, Activity, FileText } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -11,11 +11,11 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Welcome to <span className="text-primary">MediLine</span>
+              Welcome to <span className="text-primary">Rapid Test Hub</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Revolutionizing healthcare management with cutting-edge technology. 
-              Streamline your medical operations, enhance patient care, and boost efficiency.
+              Revolutionizing healthcare testing with cutting-edge diagnostic technology. 
+              Streamline your testing operations, enhance patient care, and boost efficiency with rapid, accurate results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -36,10 +36,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose MediLine?
+              Why Choose Rapid Test Hub?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Experience the future of healthcare management with our comprehensive solution
+              Experience the future of healthcare testing with our comprehensive diagnostic solution
             </p>
           </div>
           
@@ -48,7 +48,7 @@ const Home = () => {
               <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Secure & Compliant</h3>
               <p className="text-muted-foreground">
-                HIPAA compliant with enterprise-grade security to protect sensitive medical data
+                HIPAA compliant with enterprise-grade security to protect sensitive testing data and patient information
               </p>
             </div>
             
@@ -56,7 +56,7 @@ const Home = () => {
               <Users className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Patient-Centered</h3>
               <p className="text-muted-foreground">
-                Designed with patients in mind to improve care delivery and satisfaction
+                Designed with patients in mind to improve testing experience and deliver faster results
               </p>
             </div>
             
@@ -64,7 +64,7 @@ const Home = () => {
               <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Lightning Fast</h3>
               <p className="text-muted-foreground">
-                Optimized performance for quick access to critical patient information
+                Rapid testing capabilities with results in minutes, not hours or days
               </p>
             </div>
           </div>
@@ -77,24 +77,24 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Complete Healthcare Management Solution
+                Complete Testing Management Solution
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                From patient records to appointment scheduling, billing to analytics - 
-                MediLine handles it all with precision and care.
+                From rapid diagnostics to result management, inventory tracking to analytics - 
+                Rapid Test Hub handles it all with precision and speed.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Heart className="h-5 w-5 text-primary" />
-                  <span>Electronic Health Records (EHR)</span>
+                  <TestTube className="h-5 w-5 text-primary" />
+                  <span>Rapid Diagnostic Testing</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Activity className="h-5 w-5 text-primary" />
-                  <span>Real-time Patient Monitoring</span>
+                  <span>Real-time Result Monitoring</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FileText className="h-5 w-5 text-primary" />
-                  <span>Automated Billing & Insurance</span>
+                  <span>Automated Reporting & Analytics</span>
                 </div>
               </div>
               <Button className="mt-6" asChild>
@@ -103,9 +103,9 @@ const Home = () => {
             </div>
             
             <div className="bg-card p-8 rounded-lg border shadow-sm">
-              <h3 className="text-2xl font-semibold mb-4">Ready to Transform Your Practice?</h3>
+              <h3 className="text-2xl font-semibold mb-4">Ready to Transform Your Testing?</h3>
               <p className="text-muted-foreground mb-6">
-                Join thousands of healthcare providers who trust MediLine for their daily operations.
+                Join thousands of healthcare providers who trust Rapid Test Hub for their diagnostic operations.
               </p>
               <Button asChild className="w-full">
                 <Link to="/contact">Schedule a Demo</Link>
