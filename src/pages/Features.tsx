@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { 
-  Heart, 
+  TestTube, 
   Calendar, 
   FileText, 
-  CreditCard, 
+  Share, 
   BarChart3, 
   Shield, 
   Smartphone, 
@@ -14,82 +14,87 @@ import {
   Users,
   Database,
   Bell,
-  Stethoscope
+  Globe,
+  Upload,
+  Wallet,
+  Activity,
+  CheckCircle,
+  Zap
 } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
-      icon: Heart,
-      title: "Electronic Health Records (EHR)",
-      description: "Comprehensive patient records with real-time updates, medical history tracking, and secure data management.",
-      benefits: ["Complete patient history", "Real-time updates", "HIPAA compliant"]
+      icon: TestTube,
+      title: "Smart Test Recommendations",
+      description: "Intelligent system that suggests appropriate tests based on symptoms and medical history",
+      benefits: ["AI-powered diagnostic suggestions", "Personalized test recommendations", "Evidence-based medical protocols", "Reduced diagnostic errors"]
     },
     {
-      icon: Calendar,
-      title: "Appointment Management",
-      description: "Smart scheduling system with automated reminders, waitlist management, and calendar synchronization.",
-      benefits: ["Online booking", "Automated reminders", "Resource optimization"]
+      icon: Activity,
+      title: "Live Report Tracking",
+      description: "Real-time status tracking from sample collection to report delivery",
+      benefits: ["Show real-time status: Sample Collected → In Process → Report Ready", "Automated status updates", "Patient notification system", "Progress transparency"]
+    },
+    {
+      icon: Share,
+      title: "Email/WhatsApp App's Share Reports",
+      description: "Seamless sharing of test reports through multiple communication channels",
+      benefits: ["Direct email delivery", "WhatsApp integration", "Secure document sharing", "Multi-platform accessibility"]
+    },
+    {
+      icon: Globe,
+      title: "Multi-Language Support",
+      description: "Comprehensive language support for diverse patient populations",
+      benefits: ["Hindi and Tamil support", "Local language interfaces", "Cultural adaptation", "Improved accessibility"]
+    },
+    {
+      icon: Upload,
+      title: "Prescription Upload",
+      description: "Easy uploading and management of medical prescriptions and documents",
+      benefits: ["Digital prescription storage", "OCR text recognition", "Secure document management", "Quick access to medical history"]
+    },
+    {
+      icon: Users,
+      title: "Family Health Management",
+      description: "Manage health records for parents, kids, and spouse under one account",
+      benefits: ["Unified family dashboard", "Individual health profiles", "Shared medical history", "Family health insights"]
+    },
+    {
+      icon: Wallet,
+      title: "Health Wallet",
+      description: "Collect money to reduce final price and manage healthcare expenses",
+      benefits: ["Prepaid health credits", "Discounted test packages", "Expense tracking", "Budget management"]
+    },
+    {
+      icon: Bell,
+      title: "Auto Reminders & Retest Suggestions",
+      description: "Automated notifications for follow-ups and retesting schedules",
+      benefits: ["Intelligent reminder system", "Retest recommendations", "Health milestone tracking", "Preventive care alerts"]
     },
     {
       icon: FileText,
-      title: "Clinical Documentation",
-      description: "Streamlined documentation with templates, voice-to-text, and integrated medical coding assistance.",
-      benefits: ["Pre-built templates", "Voice recognition", "ICD-10 coding"]
-    },
-    {
-      icon: CreditCard,
-      title: "Billing & Insurance",
-      description: "Automated billing processes, insurance claim management, and financial reporting tools.",
-      benefits: ["Automated claims", "Payment tracking", "Financial analytics"]
-    },
-    {
-      icon: BarChart3,
-      title: "Analytics & Reporting",
-      description: "Comprehensive dashboards with patient analytics, operational metrics, and custom reporting.",
-      benefits: ["Real-time dashboards", "Custom reports", "Performance metrics"]
+      title: "Digital Medical Records",
+      description: "Secure storage and management of complete medical history and documents",
+      benefits: ["HIPAA compliant storage", "Easy access and retrieval", "Document version control", "Comprehensive health timeline"]
     },
     {
       icon: Shield,
       title: "Security & Compliance",
-      description: "Enterprise-grade security with role-based access, audit trails, and compliance monitoring.",
-      benefits: ["End-to-end encryption", "Audit logs", "Compliance tracking"]
+      description: "Enterprise-grade security with RBAC and comprehensive audit trails",
+      benefits: ["JWT secure authentication", "Role-based access control", "File encryption for sensitive documents", "Full system audit logs"]
     },
     {
       icon: Smartphone,
-      title: "Mobile Access",
-      description: "Full-featured mobile app for healthcare providers and patients with offline capabilities.",
-      benefits: ["Cross-platform app", "Offline access", "Push notifications"]
+      title: "Mobile App Support",
+      description: "Full-featured mobile application for Android with offline capabilities",
+      benefits: ["Kotlin/Java development", "Retrofit for API integration", "SQLite for offline caching", "Firebase push notifications"]
     },
     {
-      icon: Clock,
-      title: "24/7 Monitoring",
-      description: "Continuous system monitoring with automated backups and disaster recovery protocols.",
-      benefits: ["System uptime", "Data backup", "Disaster recovery"]
-    },
-    {
-      icon: Users,
-      title: "Patient Portal",
-      description: "Self-service portal for patients to access records, book appointments, and communicate with providers.",
-      benefits: ["Online access", "Secure messaging", "Appointment booking"]
-    },
-    {
-      icon: Database,
-      title: "Data Integration",
-      description: "Seamless integration with existing systems, labs, pharmacies, and medical devices.",
-      benefits: ["API connectivity", "Lab integration", "Device compatibility"]
-    },
-    {
-      icon: Bell,
-      title: "Smart Notifications",
-      description: "Intelligent alert system for critical events, medication reminders, and follow-up care.",
-      benefits: ["Critical alerts", "Medication reminders", "Care coordination"]
-    },
-    {
-      icon: Stethoscope,
-      title: "Telemedicine",
-      description: "Built-in telemedicine platform with video consultations, screen sharing, and digital prescriptions.",
-      benefits: ["Video consultations", "Digital prescriptions", "Remote monitoring"]
+      icon: BarChart3,
+      title: "Analytics & Insights",
+      description: "Comprehensive analytics dashboard for monitoring trends and performance",
+      benefits: ["Test volumes per week", "Lab/doctor performance metrics", "Demand trend analysis", "User activity monitoring"]
     }
   ];
 
@@ -102,8 +107,8 @@ const Features = () => {
             Powerful Features for Modern Healthcare
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-            Discover the comprehensive suite of tools designed to streamline your healthcare 
-            operations and enhance patient care quality.
+            Discover the comprehensive suite of features that make Rapid Test Hub the ideal choice 
+            for healthcare providers looking to streamline operations and enhance patient care.
           </p>
           <Button size="lg" asChild>
             <Link to="/contact">Request a Demo</Link>
@@ -122,69 +127,92 @@ const Features = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2">
-                  {feature.benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-muted-foreground">
-                      <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      {benefit}
-                    </li>
+                <div className="space-y-2">
+                  {feature.benefits.map((benefit, benefitIndex) => (
+                    <div key={benefitIndex} className="flex items-start space-x-2">
+                      <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm text-muted-foreground">{benefit}</span>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        {/* Integration Section */}
-        <div className="bg-card p-8 rounded-lg border mb-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Seamless Integrations</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              MediLine integrates with your existing healthcare ecosystem to provide a unified experience.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="p-4">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <Database className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-medium">Lab Systems</h3>
+        {/* Technology Integration */}
+        <div className="bg-muted/30 rounded-lg p-8 mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Technology Stack</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <Smartphone className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Mobile App (Android)</h3>
+              <p className="text-muted-foreground mb-4">Kotlin/Java with comprehensive offline support</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li>• Retrofit for API integration</li>
+                <li>• SQLite for offline caching</li>
+                <li>• Firebase for push notifications</li>
+              </ul>
             </div>
-            <div className="p-4">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <CreditCard className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-medium">Insurance APIs</h3>
+            
+            <div className="text-center">
+              <Database className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Web App (Admin/Lab Portal)</h3>
+              <p className="text-muted-foreground mb-4">React.js with modern UI design</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li>• Axios for HTTP calls</li>
+                <li>• TailwindCSS for UI design</li>
+                <li>• Responsive web interface</li>
+              </ul>
             </div>
-            <div className="p-4">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <Smartphone className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-medium">Medical Devices</h3>
-            </div>
-            <div className="p-4">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <FileText className="h-8 w-8 text-primary" />
-              </div>
-              <h3 className="font-medium">Pharmacy Systems</h3>
+            
+            <div className="text-center">
+              <Database className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Backend & Database</h3>
+              <p className="text-muted-foreground mb-4">Node.js with MySQL database</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li>• Express or Spring Boot (Java)</li>
+                <li>• MySQL database</li>
+                <li>• RESTful APIs</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center bg-primary/5 p-12 rounded-lg">
-          <h2 className="text-3xl font-bold mb-4">Ready to Experience MediLine?</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            See how our features can transform your healthcare practice. 
-            Schedule a personalized demo today.
+        {/* Future Scope */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Future Scope</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-card p-6 rounded-lg border text-center">
+              <Zap className="h-10 w-10 text-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Telemedicine Integration</h3>
+              <p className="text-muted-foreground text-sm">Integration with telemedicine or pharmacy delivery services</p>
+            </div>
+            <div className="bg-card p-6 rounded-lg border text-center">
+              <FileText className="h-10 w-10 text-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">Insurance Claim Tracking</h3>
+              <p className="text-muted-foreground text-sm">Health insurance claim tracking and management</p>
+            </div>
+            <div className="bg-card p-6 rounded-lg border text-center">
+              <Activity className="h-10 w-10 text-primary mx-auto mb-4" />
+              <h3 className="text-lg font-semibold mb-2">QR-Code Digital Health ID</h3>
+              <p className="text-muted-foreground text-sm">QR-code based digital health ID for seamless access</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center bg-primary/5 p-8 rounded-lg">
+          <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
+          <p className="text-muted-foreground mb-6">
+            Experience the power of Rapid Test Hub and transform your healthcare operations today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" asChild>
-              <Link to="/contact">Schedule Demo</Link>
+            <Button asChild>
+              <Link to="/contact">Schedule a Demo</Link>
             </Button>
-            <Button variant="outline" size="lg" asChild>
-              <Link to="/modules">View Modules</Link>
+            <Button variant="outline" asChild>
+              <Link to="/modules">View All Modules</Link>
             </Button>
           </div>
         </div>

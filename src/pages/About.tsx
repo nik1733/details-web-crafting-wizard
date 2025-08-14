@@ -10,80 +10,106 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About MediLine
+            About Rapid Test Hub
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Pioneering the future of healthcare technology with innovative solutions 
-            that put patients first and empower healthcare providers.
+            A Centralized System for Health Appointments, Lab Tests, and Digital Medical Records
           </p>
         </div>
 
-        {/* Mission & Vision */}
+        {/* Core Purpose & Objective */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="bg-card p-8 rounded-lg border">
             <Target className="h-12 w-12 text-primary mb-4" />
-            <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              To revolutionize healthcare delivery by providing comprehensive, 
-              user-friendly technology solutions that enhance patient care, 
-              streamline operations, and improve health outcomes for communities worldwide.
+            <h2 className="text-2xl font-bold mb-4">Core Purpose</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              To build a non-AI, database-driven platform that serves as a central system for patients, clinics, and diagnostic labs to:
             </p>
+            <ul className="text-muted-foreground space-y-2">
+              <li>• Book doctor appointments</li>
+              <li>• Schedule lab tests</li>
+              <li>• Access and manage digital medical records</li>
+              <li>• Receive timely alerts/reminders about appointments and reports</li>
+            </ul>
           </div>
           
           <div className="bg-card p-8 rounded-lg border">
             <Award className="h-12 w-12 text-primary mb-4" />
-            <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+            <h2 className="text-2xl font-bold mb-4">Our Solution</h2>
             <p className="text-muted-foreground leading-relaxed">
-              To be the leading healthcare technology platform that bridges the gap 
-              between traditional medical practices and modern digital solutions, 
-              making quality healthcare accessible to everyone.
+              Rapid Test Hub offers a scalable, secure, and user-friendly solution for modern healthcare 
+              operations. By keeping it database-driven and avoiding AI complexity, it's ideal for 
+              real-world deployment in clinics and diagnostic centers.
             </p>
           </div>
         </div>
 
-        {/* Our Story */}
+        {/* Security & Data Integrity */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Story</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Security & Data Integrity</h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Founded in 2020 by a team of healthcare professionals and technology experts, 
-              MediLine was born from the recognition that healthcare systems needed a 
-              comprehensive digital transformation. We witnessed firsthand the challenges 
-              faced by medical practitioners, patients, and administrators in managing 
-              complex healthcare workflows.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Our journey began with a simple question: "How can we make healthcare 
-              more efficient, accessible, and patient-centered?" This led us to develop 
-              a suite of integrated solutions that address every aspect of healthcare 
-              management, from patient records to billing, scheduling to analytics.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Today, MediLine serves healthcare providers across the globe, helping them 
-              deliver better care while reducing administrative burden and operational costs.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-card p-6 rounded-lg border">
+                <h3 className="text-xl font-semibold mb-4">Authentication & Access</h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>• JWT for secure authentication</li>
+                  <li>• RBAC (Role-Based Access Control)</li>
+                  <li>• Multi-role support (Patient, Doctor, Lab Staff, Admin)</li>
+                </ul>
+              </div>
+              <div className="bg-card p-6 rounded-lg border">
+                <h3 className="text-xl font-semibold mb-4">Data Protection</h3>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>• File encryption for sensitive documents</li>
+                  <li>• Full system audit logs (transaction tracking)</li>
+                  <li>• Secure data transmission and storage</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Key Statistics */}
+        {/* Sample Workflow */}
         <div className="bg-primary/5 rounded-lg p-8 mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">MediLine by Numbers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+          <h2 className="text-3xl font-bold text-center mb-8">Sample Workflow</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <div className="text-muted-foreground">Healthcare Providers</div>
+              <h3 className="text-xl font-semibold mb-4 text-primary">Patient Journey</h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-semibold">1</div>
+                  <span>Registers and logs in</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-semibold">2</div>
+                  <span>Searches for labs/tests and books an appointment</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-semibold">3</div>
+                  <span>Sample is collected; lab uploads the report</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-semibold">4</div>
+                  <span>Patient views/downloads their report</span>
+                </div>
+              </div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">50K+</div>
-              <div className="text-muted-foreground">Patients Served</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
-              <div className="text-muted-foreground">Uptime Reliability</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-              <div className="text-muted-foreground">Customer Support</div>
+              <h3 className="text-xl font-semibold mb-4 text-primary">Clinic/Lab Staff</h3>
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center text-sm font-semibold">1</div>
+                  <span>Logs into the lab portal</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center text-sm font-semibold">2</div>
+                  <span>Manages upcoming appointments</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center text-sm font-semibold">3</div>
+                  <span>Uploads test results upon completion</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -120,9 +146,9 @@ const About = () => {
 
         {/* CTA */}
         <div className="text-center bg-card p-8 rounded-lg border">
-          <h2 className="text-2xl font-bold mb-4">Ready to Join the MediLine Family?</h2>
+          <h2 className="text-2xl font-bold mb-4">Ready to Transform Your Healthcare Operations?</h2>
           <p className="text-muted-foreground mb-6">
-            Discover how our platform can transform your healthcare practice.
+            Discover how Rapid Test Hub can streamline your diagnostic processes and improve patient care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild>
